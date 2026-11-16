@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const FoodPage = ({ food }) => {
-  const { dish_name, image_link } = food;
+  const { dish_name, image_link, id } = food;
   return (
     <div className="card bg-base-100 shadow-sm">
       <figure>
@@ -17,10 +18,9 @@ const FoodPage = ({ food }) => {
           A card component has a figure, a body part, and inside body there are
           title and actions parts
         </p>
-        <div className="card-actions justify-end">
-          <div className="badge badge-outline">Fashion</div>
-          <div className="badge badge-outline">Products</div>
-        </div>
+        <Link href={`foods/${id}`} className="btn btn-primary">
+          view details
+        </Link>
       </div>
     </div>
   );
