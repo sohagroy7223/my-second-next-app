@@ -31,6 +31,14 @@ const Navbar = () => {
           todus
         </Link>
       </li>
+      <li>
+        <Link
+          className={pathName === "/foods" ? "text-green-400 font-bold" : ""}
+          href="/foods"
+        >
+          foods
+        </Link>
+      </li>
     </>
   );
   return (
