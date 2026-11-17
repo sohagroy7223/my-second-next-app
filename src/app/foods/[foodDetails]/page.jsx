@@ -22,7 +22,9 @@ const foodDetails = async ({ params }) => {
             <div className="badge badge-secondary">NEW</div>
           </h2>
           <p>category : {category}</p>
-          <p>price: {price}</p>
+          <p>
+            price: <b className="text-green-400">{price}</b>
+          </p>
           <p>{message}</p>
           <p>{cuisine}</p>
         </div>
